@@ -534,6 +534,7 @@ open class SearchTextField: UITextField {
         if let keyboardFrame = keyboardFrame {
             var newFrame = frame
             newFrame.size.height += theme.cellHeight
+            newFrame.size.height += 30
             
             if keyboardFrame.intersects(newFrame) {
                 direction = .up
